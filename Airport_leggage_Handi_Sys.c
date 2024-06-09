@@ -1,14 +1,14 @@
-#include <stdio.h>
+ #include <stdio.h>
 #include <string.h>
 
 #define MAX_LUGGAGE 100
 
-typedef struct {
+ar status[20];
+} Lutypedef struct {
   int id;
   char origin[50];
   char destination[50];
-  char status[20];
-} Luggage;
+  chggage;
 
 Luggage luggage_list[MAX_LUGGAGE];
 int num_luggage = 0;
