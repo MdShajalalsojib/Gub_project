@@ -1,4 +1,4 @@
-//before run this code input user define Header File
+ //before run this code input user define Header File
 //put main file and header file in one folder
 
 #include "header.h"
@@ -10,7 +10,7 @@ void addNewStudent(){
 
             int n;
             n = ((st.id)%10)+1;
-            st.id = 223002000 + n;
+            st.id = 223002088 + n;
 
             SetConsoleTextAttribute(hConsole, 2);
             cout<<"----------------------------------"<<endl;
@@ -472,7 +472,7 @@ void welcomePage(){
 
     cout<<"\t\t\t\t\t\t"<<setw(30)<<left<<"Green University Of Bangladesh"<<endl;
     SetConsoleTextAttribute(hConsole, 11);
-    cout<<"\t\t\t\t\t\t"<<setw(18)<<left<<"Md. Nazmul Hossain"<<endl;
+    cout<<"\t\t\t\t\t\t"<<setw(18)<<left<<"Md. Shajalal"<<endl;
     SetConsoleTextAttribute(hConsole, 10);
      cout<<endl<<endl;
      signUp();
@@ -486,7 +486,7 @@ void heading(int h=0){
         cout<<"\t\t\t\t\tSTUDENT MANAGEMENT SYSTEM";
         cout<<"\n\t\t\t\t\tStore Record by using C++";
         SetConsoleTextAttribute(hConsole, 12);
-        cout<<"\n\t\t\t\t\t\t\t\tDevoloped by Nazmul";
+        cout<<"\n\t\t\t\t\t\t\t\tDevoloped by Md.Shajalal";
         SetConsoleTextAttribute(hConsole, 9);
         cout<<"\n\t\t\t\t---------------------------------------------------\n\n\n"<<endl;
         return ;
