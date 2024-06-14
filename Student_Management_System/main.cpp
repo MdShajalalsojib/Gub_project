@@ -1,6 +1,4 @@
- //before run this code input user define Header File
-//put main file and header file in one folder
-
+ 
 #include "header.h"
 
 void addNewStudent(){
@@ -151,7 +149,7 @@ void deleteStudent(){
 
     long long int idNo;
     bool notFound = true, rightPassword = true;
-    char password[256];
+    char password[821];
 
     cout<<"\nDelete by ID No: ";
     cin>>idNo; cin.ignore();
@@ -181,7 +179,7 @@ void deleteStudent(){
             SetConsoleTextAttribute(hConsole, 4);
             cout<<"Do You Want to Delete(Permanently)?\nNote: Data cannot be undone"<<endl;
             cout<<"\n1. Enter Password (Type)\n2. Back (Enter 2)\n\nEnter : ";
-            cin.getline(password, 256);
+            cin.getline(password, 821);
 
                 if(strcmp(password, logIn.password)){
 
@@ -296,13 +294,13 @@ void loginWindow(){
     cout<<"---------------------------"<<endl;
 
     SetConsoleTextAttribute(hConsole, 2);
-     char uName[256], uPass[256];
+     char uName[821], uPass[821];
      bool notFound = false;
 
      cout<<"Enter Username: ";
-     cin.ignore(); cin.getline(uName, 256);
+     cin.ignore(); cin.getline(uName,821);
      cout<<"Enter Password: ";
-     cin.getline(uPass, 256);
+     cin.getline(uPass, 821);
 
      ifstream fin;
      fin.open("Log_In_Record.csv");
@@ -348,10 +346,10 @@ void ResisterWindow(){
 
      cout<<"Enter Username: ";
      cin.ignore();
-     cin.getline(logIn.user_name, 256);
+     cin.getline(logIn.user_name, 821);
 
      cout<<"Enter Password: ";
-     cin.getline(logIn.password, 256);
+     cin.getline(logIn.password, 821);
 
      if(fout.is_open()){
         fout.write((char*)&logIn, sizeof(logIn));
@@ -472,7 +470,7 @@ void welcomePage(){
 
     cout<<"\t\t\t\t\t\t"<<setw(30)<<left<<"Green University Of Bangladesh"<<endl;
     SetConsoleTextAttribute(hConsole, 11);
-    cout<<"\t\t\t\t\t\t"<<setw(18)<<left<<"Md. Shajalal"<<endl;
+    cout<<"\t\t\t\t\t\t"<<setw(18)<<left<<"Md.Shajalal"<<endl;
     SetConsoleTextAttribute(hConsole, 10);
      cout<<endl<<endl;
      signUp();
@@ -486,7 +484,7 @@ void heading(int h=0){
         cout<<"\t\t\t\t\tSTUDENT MANAGEMENT SYSTEM";
         cout<<"\n\t\t\t\t\tStore Record by using C++";
         SetConsoleTextAttribute(hConsole, 12);
-        cout<<"\n\t\t\t\t\t\t\t\tDevoloped by Md.Shajalal";
+        cout<<"\n\t\t\t\t\t\t\t\tDevoloped by Shajalal";
         SetConsoleTextAttribute(hConsole, 9);
         cout<<"\n\t\t\t\t---------------------------------------------------\n\n\n"<<endl;
         return ;
@@ -496,7 +494,7 @@ void heading(int h=0){
         cout<<endl;
         cout<<setw(24)<<left<<"|    Name";
         cout<<setw(24)<<left<<"|    ID";
-        cout<<setw(17)<<left<<"|    Department    ";
+        cout<<setw(17)<<left<<"|    Department";
         cout<<setw(17)<<left<<"|      Semester";
         cout<<setw(17)<<right<<"|    CGPA"<<"|"<<endl;
         cout<<"|====================================================================================================|";
@@ -521,7 +519,7 @@ void aboutMe(){
     cout<<"------------------------------"<<endl;
 
     cout<<"\n\t-------------------------------------------------------------------"<<endl;
-    cout<<"\n\t\tAbout Me Features is coming soon...\n\t\tTill day stay with us...\n\t\t\t\t\tThank You...\n\t\t\t\t\t\t\t Md. Nazmul Hossain"<<endl;
+    cout<<"\n\t\tAbout Me Features is coming soon...\n\t\tTill day stay with us...\n\t\t\t\t\tThank You...\n\t\t\t\t\t\t\t Md.Shajalal"<<endl;
     cout<<"\t--------------------------------------------------------------------"<<endl;
 }
 
